@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #001F3F;
+  --color-navy-light: #003366;
+  --color-slate-gray: #708090;
+  --color-pure-white: #FFFFFF;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-white bg-navy font-sans selection:bg-white selection:text-navy;
+  }
+}
+
+.blueprint-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.glass-nav {
+  @apply bg-navy/90 backdrop-blur-md border-b border-white/10;
+}
+
+.btn-primary {
+  @apply px-6 py-2.5 bg-white text-navy font-bold text-xs uppercase tracking-wider rounded-sm transition-all hover:bg-slate-200 active:scale-95;
+}
+
+.btn-outline {
+  @apply px-6 py-2.5 border border-white/20 text-white font-bold text-xs uppercase tracking-wider rounded-sm transition-all hover:bg-white hover:text-navy active:scale-95;
+}
+
+.service-card {
+  @apply bg-white/3 border border-white/10 rounded-sm p-4 transition-all hover:bg-white/10 hover:border-white/30 hover:-translate-y-1;
+}
+
+.accent-line {
+  @apply h-[2px] bg-slate-500 rounded-full;
+}
+
