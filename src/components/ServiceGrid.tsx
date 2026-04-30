@@ -144,12 +144,19 @@ function ServiceModal({ service, onClose }: { service: Service; onClose: () => v
             <div className="flex items-center gap-3 mb-6">
               <div className="w-8 h-[1px] bg-slate-600"></div>
               <p className="text-[9px] font-bold text-slate-500 uppercase tracking-[0.2em]">
-                {t({ en: 'Project Request', bn: 'প্রজেক্ট রিকোয়েস্ট' })}
+                {t({ en: 'Take Action', bn: 'সেবা গ্রহণের উপায়' })}
               </p>
             </div>
-            <button className="btn-primary w-full tracking-[0.3em]">
-              {t({ en: 'Book Site Inspection', bn: 'সাইট ইনস্পেকশন বুক করুন' })}
-            </button>
+            
+            <div className="grid grid-cols-1 gap-3">
+              <a 
+                href="#request-services"
+                onClick={onClose}
+                className="btn-primary w-full text-center tracking-[0.2em]"
+              >
+                {t({ en: 'Service Request / Site Inspection', bn: 'সার্ভিস রিকোয়েষ্ট / সাইট ইনস্পেকশন' })}
+              </a>
+            </div>
           </div>
         </div>
       </motion.div>

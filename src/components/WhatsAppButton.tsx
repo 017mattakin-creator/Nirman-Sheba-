@@ -8,7 +8,7 @@ export default function WhatsAppButton() {
 
   return (
     <motion.a
-      href="https://wa.me/8801234567890" // Placeholder number
+      href="https://wa.me/8801831052009"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0, opacity: 0 }}

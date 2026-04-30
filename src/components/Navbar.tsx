@@ -40,13 +40,14 @@ export default function Navbar() {
             <span className="uppercase">{language === 'en' ? 'BN' : 'EN'}</span>
           </button>
           
-          <motion.button 
+          <motion.a 
+            href="#request-services"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="btn-primary"
           >
             {t(labels.cta)}
-          </motion.button>
+          </motion.a>
         </div>
       </div>
     </nav>
