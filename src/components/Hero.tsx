@@ -47,18 +47,19 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-wrap gap-4 pt-4">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
+            <a
+              href="#services"
               className="btn-primary"
             >
               {t(content.cta1)}
-            </motion.button>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="btn-outline"
+            </a>
+            <a
+              href="tel:+8801831052009"
+              className="btn-outline flex items-center gap-2"
             >
-              {t(content.cta2)}
-            </motion.button>
+              <span>{t({ en: 'Free Expert Consultation', bn: 'ফ্রি বিশেষজ্ঞ পরামর্শ নিন' })}</span>
+              <span className="font-mono">+8801831052009</span>
+            </a>
           </div>
 
           <div className="grid grid-cols-3 gap-4 mt-8">
